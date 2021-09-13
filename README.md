@@ -14,3 +14,9 @@
 
 ## Introduction
 We present a novel high-fidelity GAN inversion framework that enables attribute editing with image-specific details well-preserved (e.g., background, appearance and illumination).
+
+<img src="pics/method.jpg" width="800px"/>  
+
+
+## Results
+<img src="pics/demo1.jpg" width="350px"/>   <img src="pics/demo2.jpg" width="380px"/>  
