@@ -17,7 +17,7 @@ We present a novel high-fidelity GAN inversion framework that enables attribute 
 
 <img src="pics/method.jpg" width="800px"/>  
 
-## To Do
+## To Do (expected in late October)
 - [ ] Release the code
 - [ ] Release the pretrained model
 
