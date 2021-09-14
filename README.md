@@ -20,3 +20,9 @@ We present a novel high-fidelity GAN inversion framework that enables attribute 
 
 ## Results
 <img src="pics/demo1.jpg" width="350px"/>   <img src="pics/demo2.jpg" width="380px"/>  
+
+## Citation
+If you find this work useful for your research, please cite:
+``` 
+
+```
