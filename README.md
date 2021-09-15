@@ -2,7 +2,7 @@
 
 (Code is coming later.)
 
-[paper](https://arxiv.org/) | [project website](https://tengfei-wang.github.io/HFGI/) | [demo video]()
+[paper](https://github.com/Tengfei-Wang/Tengfei-Wang.github.io/blob/master/HFGI/paper.pdf) | [project website](https://tengfei-wang.github.io/HFGI/) | [demo video]()
 
 <img src="pics/1.jpg" width="130px"/>    <img src="pics/2.jpg" width="130px"/>   <img src="pics/3.jpg" width="130px"/>    <img src="pics/4.jpg" width="130px"/>  <img src="pics/5.jpg" width="130px"/>    <img src="pics/6.jpg" width="130px"/> 
 
