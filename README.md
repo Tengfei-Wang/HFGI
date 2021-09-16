@@ -2,7 +2,7 @@
 
 (Code is coming later.)
 
-[paper](https://github.com/Tengfei-Wang/Tengfei-Wang.github.io/blob/master/HFGI/paper.pdf) | [project website](https://tengfei-wang.github.io/HFGI/) | [demo video]()
+[paper](https://arxiv.org/pdf/2109.06590.pdf) | [project website](https://tengfei-wang.github.io/HFGI/) | [demo video]()
 
 <img src="pics/1.jpg" width="130px"/>    <img src="pics/2.jpg" width="130px"/>   <img src="pics/3.jpg" width="130px"/>    <img src="pics/4.jpg" width="130px"/>  <img src="pics/5.jpg" width="130px"/>    <img src="pics/6.jpg" width="130px"/> 
 
@@ -27,6 +27,12 @@ We present a novel high-fidelity GAN inversion framework that enables attribute 
 
 ## Citation
 If you find this work useful for your research, please cite:
-``` 
 
+``` 
+@InProceedings{wang2021HFGI,
+      author = {Tengfei Wang and Yong Zhang and Yanbo Fan and Jue Wang and Qifeng Chen},
+      title = {High-Fidelity GAN Inversion for Image Attribute Editing}, 
+      booktitle = {arxiv},  
+      year = {2021}
+}
 ```
