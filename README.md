@@ -1,6 +1,8 @@
 # HFGI: High-Fidelity GAN Inversion for Image Attribute Editing
 
 (Code is coming later.)
+> High-Fidelity GAN Inversion for Image Attribute Editing   
+
 
 [paper](https://arxiv.org/pdf/2109.06590.pdf) | [project website](https://tengfei-wang.github.io/HFGI/) | [demo video](https://www.youtube.com/watch?v=_CXk4LjoKP8)
 
@@ -29,10 +31,10 @@ We present a novel high-fidelity GAN inversion framework that enables attribute 
 If you find this work useful for your research, please cite:
 
 ``` 
-@InProceedings{wang2021HFGI,
+@article{wang2021HFGI,
       author = {Tengfei Wang and Yong Zhang and Yanbo Fan and Jue Wang and Qifeng Chen},
       title = {High-Fidelity GAN Inversion for Image Attribute Editing}, 
-      booktitle = {arxiv},  
+      journal = {arxiv:2109.06590},  
       year = {2021}
 }
 ```
