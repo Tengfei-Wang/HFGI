@@ -60,7 +60,8 @@ For customized images, it is encouraged to first pre-process (align & crop) them
 for alignment details.
 
 ### Inference
-Modify `inference.sh` according to the follwing instructions, and run:
+Modify `inference.sh` according to the follwing instructions, and run:   
+(It is possibly slow for the first-time running.)
 ```
 bash inference.sh
 ```
