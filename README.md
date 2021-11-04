@@ -6,7 +6,7 @@ Update: We released the inference code and the pre-trained model on Oct. 31. The
 Update: We provided a Colab notebook for play.
 
 [paper](https://arxiv.org/pdf/2109.06590.pdf) | [project website](https://tengfei-wang.github.io/HFGI/) | [demo video](https://www.youtube.com/watch?v=_CXk4LjoKP8) |
-[Colab](http://colab.research.google.com/github/Tengfei-Wang/HFGI/blob/main/HFGI_playground.ipynb)
+[Colab](http://colab.research.google.com/github/Tengfei-Wang/HFGI/blob/main/HFGI_playground.ipynb) | [Replicate demo & Docker Image](https://replicate.ai/tengfei-wang/hfgi)
   
 <img src="pics/1.jpg" width="130px"/>    <img src="pics/2.jpg" width="130px"/>   <img src="pics/3.jpg" width="130px"/>    <img src="pics/4.jpg" width="130px"/>  <img src="pics/5.jpg" width="130px"/>    <img src="pics/6.jpg" width="130px"/> 
 
