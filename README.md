@@ -84,17 +84,17 @@ The source videos and edited results in our paper can be found in [this link](ht
 For video editing, we first pre-process (align & crop) each frame, and then perform editing with the pre-trained model.
 
 ## More Results
-<img src="pics/demo1.jpg" width="350px"/>   <img src="pics/demo2.jpg" width="380px"/>  
+<img src="pics/real_edit.jpg" width="700px"/>  
 
 ## Citation
 If you find this work useful for your research, please cite:
 
 ``` 
-@article{wang2021HFGI,
-      author = {Tengfei Wang and Yong Zhang and Yanbo Fan and Jue Wang and Qifeng Chen},
-      title = {High-Fidelity GAN Inversion for Image Attribute Editing}, 
-      journal = {arxiv:2109.06590},  
-      year = {2021}
+@inproceedings{wang2021HFGI,
+  title={High-Fidelity GAN Inversion for Image Attribute Editing},
+  author={Wang, Tengfei and Zhang, Yong and Fan, Yanbo and Wang, Jue and Chen, Qifeng},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2022}
 }
 ```
 
