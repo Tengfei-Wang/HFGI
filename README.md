@@ -1,4 +1,4 @@
-# HFGI: High-Fidelity GAN Inversion for Image Attribute Editing
+# HFGI: High-Fidelity GAN Inversion for Image Attribute Editing (CVPR 2022)
 
 > High-Fidelity GAN Inversion for Image Attribute Editing   
 
