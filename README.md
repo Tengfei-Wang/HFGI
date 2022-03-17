@@ -1,11 +1,13 @@
 # HFGI: High-Fidelity GAN Inversion for Image Attribute Editing (CVPR 2022)
 
 > High-Fidelity GAN Inversion for Image Attribute Editing   
+> https://tengfei-wang.github.io/HFGI/
 
 Update: We released the inference code and the pre-trained model on Oct. 31. The training code is coming soon.   
-Update: We provided a Colab notebook for play.
+Update: We provided a Colab notebook for play.  
+Update: We released the training code.
 
-[paper](https://arxiv.org/pdf/2109.06590.pdf) | [project website](https://tengfei-wang.github.io/HFGI/) | [demo video](https://www.youtube.com/watch?v=_CXk4LjoKP8) |
+[paper](https://arxiv.org/pdf/2109.06590.pdf) | [supp.](https://github.com/Tengfei-Wang/Tengfei-Wang.github.io/blob/master/HFGI/supp.pdf) | [project website](https://tengfei-wang.github.io/HFGI/) | [demo video](https://www.youtube.com/watch?v=_CXk4LjoKP8) |
 [Colab](http://colab.research.google.com/github/Tengfei-Wang/HFGI/blob/main/HFGI_playground.ipynb) | [online demo](https://replicate.ai/tengfei-wang/hfgi)
   
 <img src="pics/1.jpg" width="130px"/>    <img src="pics/2.jpg" width="130px"/>   <img src="pics/3.jpg" width="130px"/>    <img src="pics/4.jpg" width="130px"/>  <img src="pics/5.jpg" width="130px"/>    <img src="pics/6.jpg" width="130px"/> 
@@ -24,8 +26,7 @@ We present a novel high-fidelity GAN inversion framework that enables attribute 
 ## To Do
 - [x] Release the inference code
 - [x] Release the pretrained model
-- [ ] Release the training code (upon approval)
-
+- [x] Release the training code 
 ## Set up
 ### Installation
 ```
@@ -76,9 +77,25 @@ bash inference.sh
 | --edit_degree | control the degree of editing (works for 'age' and 'smile').
 
 
-## Training
-Coming soon
 
+## Training
+### Preparation
+1. Download datasets and modify the dataset path in `./configs/paths_config.py` accordingly.
+2. Download some pretrained models and put them in `./pretrained`.
+
+| Model | Description
+| :--- | :----------
+|[StyleGAN2 (FFHQ)](https://drive.google.com/file/d/1EM87UquaoQmk17Q8d5kYIAHqu0dkYqdT/view?usp=sharing) | Pretrained face generator on FFHQ  from [rosinality](https://github.com/rosinality/stylegan2-pytorch).
+|[e4e (FFHQ)](https://drive.google.com/file/d/1cUv_reLE6k3604or78EranS7XzuVMWeO/view?usp=sharing) | Pretrained initial encoder on FFHQ  from [omertov](https://github.com/omertov/encoder4editing).
+|[Feature extractor (for face)](https://drive.google.com/file/d/1KW7bjndL3QG3sxBbZxreGHigcCCpsDgn/view?usp=sharing) | Pretrained IR-SE50 model taken from [TreB1eN](https://github.com/TreB1eN/InsightFace_Pytorch) for ID loss calculation.
+|[Feature extractor (for car)](https://drive.google.com/file/d/18rLcNGdteX5LwT7sv_F7HWr12HpVEzVe/view?usp=sharing) | Pretrained ResNet-50 model taken from [omertov](https://github.com/omertov/encoder4editing) for ID loss calculation.
+
+
+### Start Training
+Modify `option` and `training.sh` and run:
+```
+bash train.sh
+```
 ## Video Editing
 The source videos and edited results in our paper can be found in [this link](https://drive.google.com/drive/folders/1h3swFCV9mEAsz3qIRlyVQynaxSQeH7II?usp=sharing).   
 For video editing, we first pre-process (align & crop) each frame, and then perform editing with the pre-trained model.
