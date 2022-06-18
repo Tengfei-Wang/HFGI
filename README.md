@@ -10,9 +10,9 @@ Update: We released the training code.
 [paper](https://arxiv.org/pdf/2109.06590.pdf) | [supp.](https://github.com/Tengfei-Wang/Tengfei-Wang.github.io/blob/master/HFGI/supp.pdf) | [project website](https://tengfei-wang.github.io/HFGI/) | [demo video](https://www.youtube.com/watch?v=yfF9QdIsbvU) |
 [Colab](http://colab.research.google.com/github/Tengfei-Wang/HFGI/blob/main/HFGI_playground.ipynb) | [online demo](https://replicate.ai/tengfei-wang/hfgi)
   
-<img src="pics/1.jpg" width="130px"/>    <img src="pics/2.jpg" width="130px"/>   <img src="pics/3.jpg" width="130px"/>    <img src="pics/4.jpg" width="130px"/>  <img src="pics/5.jpg" width="130px"/>    <img src="pics/6.jpg" width="130px"/> 
+<img src="pics/1.jpg" width="130px"/>        <img src="pics/4.jpg" width="130px"/>  <img src="pics/5.jpg" width="130px"/>    <img src="pics/6.jpg" width="130px"/> 
 
-<img src="pics/1.gif" width="130px"/>    <img src="pics/2.gif" width="130px"/>   <img src="pics/3.gif" width="130px"/>    <img src="pics/4.gif" width="130px"/>   <img src="pics/5.gif" width="130px"/>    <img src="pics/6.gif" width="130px"/> 
+<img src="pics/1.gif" width="130"/>     <img src="pics/4.gif" width="130"/>   <img src="pics/5.gif" width="130"/>    <img src="pics/6.gif" width="130"/> 
 
 
 
