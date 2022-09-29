@@ -1,7 +1,6 @@
 import tempfile
 import numpy as np
 from argparse import Namespace
-from pathlib import Path
 import torch
 from torchvision import transforms
 import PIL.Image
@@ -9,7 +8,8 @@ import scipy
 import scipy.ndimage
 import dlib
 import imageio
-import cog
+from cog import BasePredictor, Input, Path
+
 from models.psp import pSp
 from utils.common import tensor2im
 from editings import latent_editor
@@ -20,7 +20,7 @@ bunzip2 shape_predictor_68_face_landmarks.dat.bz2
 """
 
 
-class Predictor(cog.Predictor):
+class Predictor(BasePredictor):
     def setup(self):
         model_path = "checkpoint/ckpt.pt"
         ckpt = torch.load(model_path, map_location="cpu")
@@ -54,27 +54,21 @@ class Predictor(cog.Predictor):
             "lip": (34, 10, 11, 20),
         }
 
-    @cog.input(
-        "image",
-        type=Path,
-        help="input facial image, which will be aligned and cropped to 256*256 first",
-    )
-    @cog.input(
-        "edit_attribute",
-        type=str,
-        default="smile",
-        options=["inversion", "age", "smile", "eyes", "lip", "beard"],
-        help="choose image editing option",
-    )
-    @cog.input(
-        "edit_degree",
-        type=float,
-        default=0,
-        min=-5,
-        max=5,
-        help="control the degree of editing (valid for 'age' and 'smile').",
-    )
-    def predict(self, image, edit_attribute, edit_degree):
+    def predict(
+        self,
+        image: Path = Input(description="input image"),
+        edit_attribute: str = Input(
+            default="smile",
+            choices=["inversion", "age", "smile", "eyes", "lip", "beard"],
+            description="choose image editing option",
+        ),
+        edit_degree: float = Input(
+            default=0,
+            ge=-5,
+            le=5,
+            description="control the degree of editing (valid for 'age' and 'smile').",
+        ),
+    ) -> Path:
         out_path = Path(tempfile.mkdtemp()) / "out.png"
         resize_dims = (256, 256)
         input_path = str(image)
